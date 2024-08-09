@@ -1,0 +1,76 @@
+body {
+    max-width: 1250px;
+}
+
+.page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    /* max-width: 1920px; */
+}
+
+header { 
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input {
+    min-width: 20%;
+    width: 60%;
+    max-width: 30rem;
+}
+
+.sortContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.sortControl {
+    min-width: min-content;
+}
+
+.movies {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    gap: 45px;
+}
+
+.movie {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie h3, .movie p {
+    margin: 8px;
+}
+
+.movie img {
+    border-radius: 10px;
+    aspect-ratio: 256/350;
+}
